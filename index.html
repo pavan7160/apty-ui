@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div class="main-container">
+    <div class="side-nav">
+        <ul>
+            <li>
+                <a href=""><img src="images/logo.svg" alt=""></a>
+            </li>
+            <li><a href=""><img src="images/home.svg" alt=""></a></li>
+<li><a href=""><img src="images/briefcase.svg" alt=""></a></li>
+<li><a href=""><img src="images/compass.svg" alt=""></a></li>
+<li><a href=""><img src="images/gear.svg" alt=""></a></li>
+<li><a href=""><img src="images/log-out.svg" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="mobile-banner">
+            <div class="mobile-banner-inner">
+                <a href=""><img src="images/logo.svg" alt=""></a>
+                <a class="hamburger-menu" href=""><img src="images/mobile-hamburger.png" alt=""></a>
+            </div>
+            <h2>Discover great places to visit</h2>
+        </div>
+        <div class="main-header-content">
+            <h1 class="travel-main-header">Discover great places to visit</h1>
+            <label class="switch">
+                <input type="checkbox" id="toggleView" onclick="toggleView()">
+                <span class="slider"></span>
+              </label>
+        </div>
+        <div class="travel-cards-container gridViewActivated" id="travelCards">
+            <div>
+                <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-1.png" alt="">
+                    <div class="badge-container">
+                        <span>Wellington</span>
+                        <span>Tianjin</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Khartoum
+                    </h3>
+                    <p class="travel-card-content">
+                        Aenean lacinia bibendum nulla sed consectetur.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                 <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-5.png" alt="">
+                    <div class="badge-container">
+                        <span>Belgrade</span>
+                        <span>Cali</span>
+                        <span>Stockholm</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Fairbanks
+                    </h3>
+                    <p class="travel-card-content">
+                        Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                 <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-2.png" alt="">
+                    <div class="badge-container">
+                        <span>Salt Lake City</span>
+                        <span>Seville</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Santa Clara
+                    </h3>
+                    <p class="travel-card-content">
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                 <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-6.png" alt="">
+                    <div class="badge-container">
+                        <span>Trondheim</span>
+                        <span>Xian</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Sofia
+                    </h3>
+                    <p class="travel-card-content">
+                        Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                 <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-3.png" alt="">
+                    <div class="badge-container">
+                        <span>Puebla</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Bengaluru
+                    </h3>
+                    <p class="travel-card-content">
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                 <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-7.png" alt="">
+                    <div class="badge-container">
+                        <span>Aarhus</span>
+                        <span>Ankara</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Belfast
+                    </h3>
+                    <p class="travel-card-content">
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                 <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-4.png" alt="">
+                    <div class="badge-container">
+                        <span>Sacramento</span>
+                        <span>Osaka</span>
+                        <span>Astana</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Portland
+                    </h3>
+                    <p class="travel-card-content">
+                        Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                 <div class="travel-card">
+                    <img class="travel-card-banner" src="images/travel-8.png" alt="">
+                    <div class="badge-container">
+                        <span>Sylhet</span>
+                    </div>
+                    <h3 class="travel-card-header">
+                        Pune
+                    </h3>
+                    <p class="travel-card-content">
+                        Mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                    <div class="travel-action-buttons">
+                        <button>
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="images/message-square.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    function toggleView(){
+    var currentView = document.getElementById("travelCards");
+    var toggleView = document.getElementById("toggleView");
+    if (toggleView.checked == true){
+        currentView.classList.remove("gridViewActivated");
+        currentView.classList.add("listViewActivated");
+    } else if(toggleView.checked == false){
+        currentView.classList.remove("listViewActivated");
+        currentView.classList.add("gridViewActivated");
+    }
+}
+</script>
+</body>
+</html>
